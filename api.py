@@ -35,14 +35,6 @@ async def parce_all_tariffs_and_return_new_version():
     tariffs = get_all_tariffs()
     return tariffs
 
-# @app.get("/tariffs/search")
-# async def seach_tariff_by_name():
-#
-
-@app.get("/")
-async def read_index():
-    return FileResponse("static/index.html")
-
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8012, lifespan='on', log_level="info")
