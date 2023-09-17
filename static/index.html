@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог Тарифов</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .tariff {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            position: relative;
+        }
+
+        .tariff-img {
+            margin-right: 10px;
+        }
+
+        .tariff-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+<h1>Каталог Тарифов</h1>
+<form action="/tariffs/parce" method="get" id="form">
+  <button id="btn" type="submit" >Парсить</button>
+</form>
+<!-- <form action="/tariffs/search" method="get" id="form2">
+    <input type="text" id="search" value=""/>
+    <button id="btn" type="submit">Искать по названию тарифа</button>
+</form> -->
+</div>
+<div id="tariffs">
+    <!-- Tariffs will be listed here -->
+</div>
+<script src="main.js"></script>
+</body>
+</html>
