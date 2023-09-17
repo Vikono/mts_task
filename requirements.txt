@@ -1,0 +1,5 @@
+fastapi 
+uvicorn
+logging
+sqlite3
+bs4
